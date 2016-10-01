@@ -17,4 +17,4 @@ const appTemplate = (
   </Provider>
 );
 
-render(appTemplate, document.getElementById('target-practice-app'));
+render(appTemplate, document.getElementById('TargetPracticeApp'));
