@@ -1,12 +1,6 @@
 {
   "extends": "airbnb",
-  "plugins": [
-    "react"
-  ],
-  "globals": {
-    "$": false,
-    "Modernizr": false
-  },
+  "plugins": ["react"],
   "rules": {
     "comma-dangle": 0,
     "space-before-function-paren": 0,
