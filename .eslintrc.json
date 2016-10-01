@@ -1,6 +1,7 @@
 {
   "extends": "airbnb",
   "plugins": ["react"],
+  "globals": { "document": false },
   "rules": {
     "comma-dangle": 0,
     "space-before-function-paren": 0,
@@ -8,6 +9,9 @@
     "func-names": 0,
     "import/no-unresolved": 0,
     "arrow-body-style": [2, "as-needed"],
-    "consistent-return": 0
+    "consistent-return": 0,
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "forbid-prop-types": [false]
   }
 }
