@@ -6,14 +6,16 @@ import actions from '../actions/_index';
 
 class TimelineApp extends React.Component {
   componentDidMount() {
-    this.props.fetchUser();
+    // this.props.fetchUser();
   }
 
   render() {
     const { user } = this.props;
 
     return (
-      <div className='AppContainer'></div>
+      <div className='AppContainer'>
+        <canvas className='AimerCanvas' height='1000' width='1000'></canvas>
+      </div>
     );
   }
 }
