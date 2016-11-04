@@ -24,8 +24,8 @@ Route::get('Detox', function (){
 });
 
 Route::get('/',function () {
-	$people = ['taylor','matt','jeffery'];
-	return view('welcome', compact($people));
+	$people = collect(['taylor','matt','jeffery']);
+	return view('welcome')->with('people', $people);
 });
 
 Route::get('/app', 'HomeController@index');
