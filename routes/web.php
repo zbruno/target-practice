@@ -11,15 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
 Route::get('Detox', function (){
-	return view('pages.about'); // resources/views/about.blade.php
+	$people = ['taylor','matt','jeffery'];
+	return view('pages.about' , compact($people)); // resources/views/about.blade.php
 
+});
+
+Route::get('/',function () {
+	$people = ['taylor','matt','jeffery'];
+	return view('welcome', compact($people));
 });
 
 Route::get('/app', 'HomeController@index');
