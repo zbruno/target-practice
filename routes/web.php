@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('Detox', function (){
+	return view('pages.about'); // resources/views/about.blade.php
+
+});
+
 Route::get('/app', 'HomeController@index');
