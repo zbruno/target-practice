@@ -12,7 +12,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 const appTemplate = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/app' component={appContainer} />
+      <Route path='/home' component={appContainer} />
     </Router>
   </Provider>
 );
